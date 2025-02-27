@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover India - Blogs</title>
+    
+    <style>
+      
+
+     /* Sticky Header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #0b0b0b;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: rgb(249, 249, 249);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+header nav ul li a:hover {
+    background-color: #ff5722;
+    border-radius: 5px;
+}
+
+/* Logo */
+.logo h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    color: rgba(247, 244, 242, 0.96);
+
+}
+
+        /* Blogs Header Section */
+        .blogs-header {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .blogs-header h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .blogs-header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        /* Banner Section */
+.banner {
+    background: url('banner 2.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    padding: 100px 20px;
+}
+
+.banner h1 {
+    font-size: 3rem;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+        /* Blog Container */
+        .blog-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 1.6em;
+            color: #333;
+            padding: 15px;
+        }
+
+        .card p {
+            padding: 0 15px;
+            color: #555;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        .read-more {
+            display: block;
+            text-align: center;
+            background-color: #ff5722;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 15px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .read-more:hover {
+            background-color: #e64a19;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #070707;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .blog-container {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+
+            header nav ul {
+                flex-direction: column;
+            }
+
+            header nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="sticky-header">
+        <div class="logo">
+            <h1>Discover India</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Culture.html">Culture</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+           <!-- Banner Section -->
+    <section class="banner">
+        <h1>Our Blogs</h1>
+        <p>Discover interesting stories, travel tips, and cultural highlights about India.</p>
+    </section>
+
+        <section class="blog-container">
+            <!-- Blog 1 -->
+            <div class="card">
+                <div class="card-grid">
+                    <img src="image/taj Mahal.jpg" alt="Taj Mahal Blog">
+                    <h3>The Majesty of the Taj Mahal</h3>
+                    <p>Discover the incredible history and beauty of the Taj Mahal, one of the Seven Wonders of the World.</p>
+                    <a href="Taj Mahal.html" class="read-more">Read More</a>
+                </div>
+            </div>
+    
+            <!-- Blog 2 -->
+            <div class="card">
+                <div class="card-grid">
+                    <img src="image/Kerala (2).jpg" alt="Kerala Blog">
+                    <h3>Exploring Kerala's Backwaters</h3>
+                    <p>Kerala is famous for its enchanting backwaters, lush tea plantations, pristine beaches, and rich cultural heritage. Known as 'God's Own Country', it offers unique experiences like houseboat cruises in Alleppey, Ayurvedic treatments, and vibrant festivals such as Onam, making it a must-visit destination. </p> 
+                    <a href="Kerala.html" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <!-- Blog 3 -->
+            <div class="card">
+                <img src="image/jaipur.jpg" alt="Jaipur Blog">
+                <h3>The Pink City - Jaipur</h3>
+                <p>Step back in time and explore the vibrant culture and stunning architecture of Jaipur. It evokes the royal family that once ruled the region and that, in 1727, founded what is now called the Old City, or “Pink City” for its trademark building color. </p>
+                <a href="jaipur.html" class="read-more">Read More</a>
+            </div>
+
+            <!-- Blog 4 -->
+            <div class="card">
+                <img src="image/goa.jpeg" alt="Goa Blog">
+                <h3>Golden Beaches of Goa</h3>
+                <p>Unwind and relax at Goa's golden beaches, a paradise for travelers.</p>
+                <a href="goa.html" class="read-more">Read More</a>
+            </div>
+
+            <!-- Blog 5 -->
+            <div class="card">
+                <img src="image/VRINDAVAN.jpg" alt="Vrindavan Blog">
+                <h3>Visit the birthplace of Lord Krishna</h3>
+                <p>Explore the sacred city of Vrindavan, a place of great spiritual significance.</p>
+                <a href="Vrindavan.html" class="read-more">Read More</a>
+            </div>
+
+            <!-- Blog 6 -->
+            <div class="card">
+                <img src="image/udiapur.jpg" alt="Udaipur Blog">
+                <h3>View of City Palace from Ambrai Ghat, Udaipur</h3>
+                <p>Explore the majestic City Palace and the serene Ambrai Ghat in Udaipur.</p>
+                <a href="Udiapur.html" class="read-more">Read More</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Discover India</p>
+    </footer>
+</body>
+</html>

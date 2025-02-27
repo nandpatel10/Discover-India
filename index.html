@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover India</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header id="sticky-header">
+        <div class="logo">
+            <h1>DISCOVER INDIA</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="Blog.html">Blogs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="singup.html">Sign Up</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Culture.html">Culture</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Background Video Section -->
+        <section class="video-section">
+            <video autoplay muted loop id="myVideo">
+                <source src="image\Welcome To India.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content">
+                <h1>Welcome to India</h1>
+                <p>Discover the diversity and beauty of India.</p>
+                <button id="myBtn" onclick="toggleVideo()">Pause</button>
+            </div>  
+        </section>
+       
+
+       
+
+        <!-- Cards Section -->
+        <section class="cards">
+            <div class="card">
+                <img src="image\Kerala (2).jpg" alt="Kerala">
+                <h3>Kerala</h3>
+                <p>Experience nature at its best.</p>
+            </div>
+            <div class="card">
+                <img src="image\jaipur.jpg" alt="Jaipur">
+                <h3>Jaipur</h3>
+                <p>The Pink City of India.</p>
+            </div>
+            <div class="card">
+                <img src="image\taj Mahal.jpg" alt="Taj Mahal">
+                <h3>Taj Mahal</h3>
+                <p>E xplore the beauty of the Taj Mahal.</p>
+            </div>
+            <div class="card">
+                <img src="image\udiapur.jpg" alt="Udiapur">
+                <h3>Udaipur </h3>
+                <p>View of City Palace from Ambrai ghat Udaipur City</p>
+            </div>
+            <div class="card">
+                <img src="image\VRINDAVAN.jpg" alt="Vrindavan">
+                <h3>Vrindavan </h3>
+                <p> Visit the birthplace of Lord Krishna.</p>
+            </div>
+            <div class="card">
+                <img src="image\goa.jpeg" alt="Goa">
+                <h3> Goa</h3>
+                <p> Experience the vibrant culture of Goa.</p>
+            </div>
+            <div class="card">
+                <img src="image\dwarka.jpg" alt="Dwarka">
+                <h3>Dwarka</h3>
+                <p>Visit the ancient city of Dwarka.</p>
+            </div>
+            <div class="card">
+                <img src="image\Amritsar.jpeg" alt="Amritsar">
+                <h3>Amritsar</h3>
+                <p>Visit the Golden Temple of Amritsar.</p>
+            </div>
+            <div class="card">
+                <img src="image\Leh ladakh.jpg" alt="Ladakh">
+                <h3>Ladakh</h3>
+                <p>Experience the beauty of Ladakh.</p>
+            </div>
+            <div class="card">
+                <img src="image\Red Fort.jpg" alt="Red Fort">
+                <h3>Red Fort</h3>
+                <p>Visit the Red Fort in Delhi.</p>
+            </div>
+        
+
+
+
+            
+        </section>
+        <div class="container">
+            <form action="action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class ="row">
+                    <div class="col-25">
+                        <label for="Iname"> Last Name</label>
+                    </div>
+                    <div class="col-75">
+                       <input type="text" id="Iname" name="lastname" placeholder="Your last name..">
+                       </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Country</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="country" name="country">
+                                <option value="select Country ">Select Country</option>
+                                <option value="australia">Australia</option>
+                                <option value=" United States">United States</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="India">India</option>
+                                <option value="France">France</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Canada">Canada</option>
+                                
+                                </select>
+                        </div>
+                </div>
+                <div class ="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Write something.." style= "height: 200px"></textarea>
+                            </div>
+                            <div class="row">
+                                <input type="submit" value="Submit">
+                                </div>
+                        </form>
+                </div>
+                
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Discover India</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Discover India</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header id="sticky-header">
+        <div class="logo">
+            <h1>Discover India</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="Blog.html">Blogs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="singup.html">Sign Up</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Culture.html">Culture</a></li>
+            </ul>
+        </nav>
+    </header>\
+    <style>
+        /* Sticky Header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header nav {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav ul li {
+    margin: 0 20px;
+  }
+  
+  header nav ul li a {
+    color: rgb(249, 249, 249);
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  /* Logo */
+.logo h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0;
+  color: rgba(247, 244, 242, 0.96);
+}
+  
+  /* Video Background */
+  .video-bg iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+  }
+  
+  /* Overlay to make form readable */
+  .bg-overlay {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent; /* Semi-transparent overlay */
+  }
+  
+  /* Signup Form */
+  .signup-form {
+    position: relative;
+    max-width: 350px;
+    padding: 20px;
+    background: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(255, 252, 252);
+  }
+  
+  h1 {
+    text-align: center;
+    color: green;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid green;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: green;
+    color: white;
+    padding: 14px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: darkgreen;
+  }
+  
+    </style>
+
+    <!-- Background Video -->
+    <div class="video-bg">
+      <iframe
+          src="image\Signiup.mp4"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+      </iframe>
+  </div>
+
+    <!-- Form with Overlay -->
+    <div class="bg-overlay">
+        <section class="signup-form">
+            <h1>Create an Account</h1>
+            <form action="signup" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Login here</a>.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Discover India</p>
+    </footer>
+
+</body>
+</html>
